@@ -1,7 +1,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/imu.hpp"
 #include "sensor_msgs/msg/magnetic_field.hpp"
-#include "sic_mpu9250/sic_cppserial_lib.hpp"
+#include "sic_mpu9250_ros2_imu_tools/sic_mpu9250_serial_comm.hpp"
 
 
 void delay_ms(unsigned long milliseconds) {

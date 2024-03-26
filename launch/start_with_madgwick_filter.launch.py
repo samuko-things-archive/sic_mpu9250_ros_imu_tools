@@ -9,7 +9,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     # Process the URDF file
-    pkg_path = os.path.join(get_package_share_directory('sic_mpu9250'))
+    pkg_path = os.path.join(get_package_share_directory('sic_mpu9250_ros2_imu_tools'))
     imu_filter_config_file = os.path.join(pkg_path,'config','imu_filter_start_params.yaml')
     sic_mpu9250_config_file = os.path.join(pkg_path,'config','sic_mpu9250_params.yaml')
     
@@ -22,7 +22,7 @@ def generate_launch_description():
     )
 
     sic_mpu9250_node = Node(
-        package='sic_mpu9250',
+        package='sic_mpu9250_ros2_imu_tools',
         executable='sic_mpu9250',
         name='sic_mpu9250',
         output='screen',

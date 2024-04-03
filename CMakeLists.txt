@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(sic_mpu9250_ros2_imu_tools)
+project(sic_mpu9250_ros_imu_tools)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
